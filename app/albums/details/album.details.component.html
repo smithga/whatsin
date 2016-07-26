@@ -1,0 +1,13 @@
+<panel title='Album Details' (backClicked)='onBack()' *ngIf='album && artist'>
+    <div class="media">
+        <div class="media-left media-top">
+            <img [src]='"images/albums/" + album.image_url' />
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{album.title}}</h4>
+            {{artist.name}}
+            <br/>
+            {{album.year}}                
+        </div>
+    </div>            
+</panel>
